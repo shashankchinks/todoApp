@@ -1,0 +1,29 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "todoapp application",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "build":"tsc",
+    "start":"node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashankchinks/todoApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashankchinks/todoApp/issues"
+  },
+  "homepage": "https://github.com/shashankchinks/todoApp#readme",
+  "dependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.17.0",
+    "@types/mongoose": "^5.5.11",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.7"
+  }
+}

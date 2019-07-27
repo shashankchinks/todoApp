@@ -6,12 +6,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var body_parser_1 = __importDefault(require("body-parser"));
 var db_1 = require("./startup/db");
+var routes_1 = require("./startup/routes");
 var TodoApp = /** @class */ (function () {
     function TodoApp() {
         this.app = express_1.default();
         this.app.listen(3000, 'localhost', function () {
             console.log("Server is running on port 3000");
         });
+        routes_1.Routes.configRoutes(this.app);
         this.configBodyParser();
         db_1.Db.connectMongoDb();
     }

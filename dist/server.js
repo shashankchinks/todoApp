@@ -13,8 +13,8 @@ var TodoApp = /** @class */ (function () {
         this.app.listen(3000, 'localhost', function () {
             console.log("Server is running on port 3000");
         });
-        routes_1.Routes.configRoutes(this.app);
         this.configBodyParser();
+        routes_1.Routes.configRoutes(this.app);
         db_1.Db.connectMongoDb();
     }
     TodoApp.prototype.configBodyParser = function () {

@@ -9,8 +9,8 @@ class TodoApp{
         this.app.listen(3000, 'localhost', ()=>{
             console.log("Server is running on port 3000");
         });
-        Routes.configRoutes(this.app);
         this.configBodyParser();
+        Routes.configRoutes(this.app);
         Db.connectMongoDb();
     }
 
